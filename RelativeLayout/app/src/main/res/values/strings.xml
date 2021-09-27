@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Profile</string>
+</resources>
+
+<ImageView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:src="@drawable/salvar"
+android:layout_marginLeft="300dp"/>

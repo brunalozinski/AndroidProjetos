@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_background"
+    android:orientation="vertical"
+    android:padding="36dp"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/gymnast"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="IMC"
+                android:textColor="@android:color/black"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_text_peso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_background"
+                android:drawableStart="@drawable/peso"
+                android:drawablePadding="10dp"
+                android:hint="Digite seu peso em kg"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/edit_text_altura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/text_background"
+                android:drawableStart="@drawable/altura"
+                android:drawablePadding="10dp"
+                android:hint="Digite seu altura"
+                android:padding="20dp" />
+
+            <Button
+                android:id="@+id/Button_calcular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_background"
+                android:padding="20dp"
+                android:text="Calcular"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/TextViewResultado"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/resultado_background"
+                android:gravity="center"
+                android:text="0.0"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Peso Ideal"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
+
