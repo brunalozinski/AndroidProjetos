@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,6 +13,11 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar!!.title = "Testando menu"
         supportActionBar!!.subtitle = "Aprendendo a lidar com os menus"
+
+        // Criar um calendário
+        val calendario = Calendar.getInstance()
+
+
 
         val tvHello = findViewById<TextView>(R.id.tv_hello)
 
